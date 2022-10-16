@@ -11,13 +11,16 @@
  * Copyright (c) 2022 goSysten Solutions Limited
  */
 
+/*-------- Libraries ----------*/
 #include <FastLED.h>
 #include <WiFi.h>
 #include <WiFiManager.h>
 
+/*-------- General Definitions ----------*/
 const char *project = "LED Controller";
 WiFiManager wifiManager;
 
+/*-------- Setup ----------*/
 void setup()
 {
     Serial.begin(115200);
@@ -30,6 +33,8 @@ void setup()
         ESP.restart();
         delay(5000);
     }
+
+    wifiManager.resetSettings(); // Comment out for persistant WiFi configuration
 
     Serial.println("");
     Serial.println("WiFi Connection Established");
