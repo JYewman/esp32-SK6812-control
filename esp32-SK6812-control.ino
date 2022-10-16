@@ -1,6 +1,6 @@
 /*
  * File: esp32-SK6812-control.ino
- * Project: esp32-SK6812-control
+ * Project: SmartKit
  * Created Date: Sunday, October 16th 2022, 8:37:18 pm
  * Author: Joshua Yewman
  * Author Email: joshua@gosystem.co.uk
