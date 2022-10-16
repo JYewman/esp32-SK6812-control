@@ -17,7 +17,7 @@
 #include <WiFiManager.h>
 
 /*-------- General Definitions ----------*/
-const char *project = "LED Controller Setup";
+const char *project = "LED Strip Controller";
 WiFiManager wifiManager;
 
 /*-------- Setup ----------*/
@@ -25,7 +25,7 @@ void setup()
 {
     Serial.begin(115200);
     wifiManager.setDarkMode(true);
-    wifiManager.setTitle("LED Controller");
+    wifiManager.setTitle("SmartKit");
     wifiManager.setMinimumSignalQuality(1);
 
     if (!wifiManager.autoConnect(project))
