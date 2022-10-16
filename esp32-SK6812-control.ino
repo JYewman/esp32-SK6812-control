@@ -24,6 +24,8 @@ WiFiManager wifiManager;
 void setup()
 {
     Serial.begin(115200);
+    wifiManager.setDarkMode(true);
+    wifiManager.setTitle("LED Controller");
     wifiManager.setMinimumSignalQuality(1);
 
     if (!wifiManager.autoConnect(project))
