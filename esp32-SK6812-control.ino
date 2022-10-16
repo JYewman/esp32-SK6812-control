@@ -17,7 +17,7 @@
 #include <WiFiManager.h>
 
 /*-------- General Definitions ----------*/
-const char *project = "LED Controller";
+const char *project = "LED Controller Setup";
 WiFiManager wifiManager;
 
 /*-------- Setup ----------*/
